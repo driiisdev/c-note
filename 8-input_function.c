@@ -21,5 +21,5 @@ int main(void)
     printf("\nHi %s", name);
     printf("You are %d years old\n", age);
 
-    return (0);
+    return 0;
 }

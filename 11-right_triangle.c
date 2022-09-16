@@ -12,14 +12,14 @@ int main(void)
     double C;
 
     printf("Enter side A: ");
-    scanf("%lf\n", &A);
+    scanf("%lf", &A);
 
     printf("Enter side B: ");
-    scanf("%lf\n", &B);
+    scanf("%lf", &B);
 
     C = sqrt(A*A + B*B);
 
-    printf("Side C: %lf", C);
+    printf("Side C: %.2lf\n", C);
 
     return 0;
 }
