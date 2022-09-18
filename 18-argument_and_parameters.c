@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - main block
- * description:
+ * description: arguments and parameters
  * Return: 0
  */
 void birthday(char name[], int id)
