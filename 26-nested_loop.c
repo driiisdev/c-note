@@ -16,16 +16,18 @@ int main(void)
     printf("Enter # of columns: ");
     scanf("%d", &columns);
 
+    scanf("%c");
+
     printf("Enter a symbol to use: ");
     scanf("%c", &symbol);
 
-    scanf("%c");
+    //issue here: clear input buffer
 
     for (int i = 1; i <= rows; i++)
     {
         for (int j = 1; j <= columns; j++)
         {
-            printf("%c*", symbol);
+            printf("%c", symbol);
         }
         printf("\n");
     }
