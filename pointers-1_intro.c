@@ -26,7 +26,7 @@ int main(void)
      * int a;       // integer
      * int *p;      // pointer to integer
      * char c;      // character
-     * char *po;    // pointer to character
+     * char *p0;    // pointer to character
      * double d;    // double
      * double *p1;  // pointer to double
      */

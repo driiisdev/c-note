@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-    char a = 'C';       // single character %c
+    char a = 'C';       //  1 byte single character %c
     char words[] = "Bro";   // array of characters %s
 
     float c = 3.141592;     // 4 bytes (32 bits of precision) 6 - 7 digits %f
