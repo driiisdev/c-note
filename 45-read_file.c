@@ -8,7 +8,7 @@ int main(void)
 {
     char buffer[255];
 
-    FILE *pF = fopen("note.txt", "r");
+    FILE *pF = fopen("txt/note.txt", "r");
 
     if (pF == NULL)
     {

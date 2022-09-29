@@ -6,9 +6,9 @@
  */
 int main()
 {
-    FILE *pF = fopen("test.txt","w");
+    FILE *pF = fopen("txt/test.txt","w");
 
-    fprintf(pF, "superman\n");
+    fprintf(pF, "bikeman\n");
 
     fclose(pF);
 
