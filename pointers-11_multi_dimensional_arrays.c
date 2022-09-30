@@ -25,5 +25,13 @@ int main(void)
     printf("%d\n", *(B+1) + 2); // basically pointing to address of &B[1][2]
     printf("%d\n", *(*B+1)); // dereferencing value of &B[0][1]
 
+    int c[3][2][2] =    {
+                        {{2, 5}, {7, 9}},
+                        {{3, 4}, {6, 1}},
+                        {{0, 8}, {11, 13}}
+                        };
+    
+    printf("%d %d %d %d\n", c, *c, c[0], &c[0][0]);
+
     return (0);
 }
