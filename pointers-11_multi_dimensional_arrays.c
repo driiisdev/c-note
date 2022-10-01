@@ -7,6 +7,8 @@
  *               = *(*(B+i)+j)
  * Return: 0
  */
+void Func(int (*B)[3]);
+
 int main(void)
 {
     int B[2][3] = {
@@ -31,7 +33,14 @@ int main(void)
                         {{0, 8}, {11, 13}}
                         };
     
-    printf("%d %d %d %d\n", c, *c, c[0], &c[0][0]);
+    // printf("%d %d %d %d\n", c, *c, c[0], &c[0][0]);
+
+    Func(B);    // B returns int(*)[3]
 
     return (0);
+}
+
+void Func(int (*B)[3])    // OR B[][3]
+{
+    printf("THI %d\n", *(*B+3));
 }
