@@ -24,10 +24,14 @@ int main()
     p = (int*)malloc(sizeof(int)); // allocating memory for an int
     p = (int*)malloc(10*sizeof(int)); // allocating memory for an array of 10 int
 
-    free(p);
-
     // calloc - void* calloc(size_t num, size_t size)
-    // NB: size_t is a data type that stores only positive integer value (size_t = unsigned int) as it size cannot be negative value or zero. function malloc return (void*) pointer that gives the address of the first byte in the block of memory allocated. calloc is same as malloc except that it takes 2 arguments.
+    // NB: calloc is same as malloc except that it takes 2 arguments. first argument is no of elements, second, size of data type in bytes.
+
+    p = (int*)calloc(10, sizeof(int)); // allocating memory for array of 10 int
+    printf("%p\n", p);
+
+    // realloc - void* realloc(void* ptr, size_t size)
+    // NB: realloc is used to reallocate the size of an existing block of memory(dynamic). function takes two arguments, first takes the pointer to the starting address of the existing block of memory, second, size of the new block of memory
 
     p = (int*)calloc(10, sizeof(int)); // allocating memory for array of 10 int
     printf("%p\n", p);
