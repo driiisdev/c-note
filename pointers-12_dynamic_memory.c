@@ -3,7 +3,7 @@
 /**
  * main - main block
  * description: dynamic memory
- * dynamic memory - allocation of memory for a program on the Heap, at run time or execution.
+ * dynamic memory - allocation of memory(block of memory) for a program on the Heap, at run time or execution.
  * Return: 0
  */
 int main ()
@@ -39,3 +39,4 @@ int main ()
 
     return (0);
 }
+    
