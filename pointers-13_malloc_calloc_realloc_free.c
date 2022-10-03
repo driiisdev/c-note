@@ -33,8 +33,13 @@ int main()
     // realloc - void* realloc(void* ptr, size_t size)
     // NB: realloc is used to reallocate the size of an existing block of memory(dynamic). function takes two arguments, first takes the pointer to the starting address of the existing block of memory, second, size of the new block of memory
 
-    p = (int*)calloc(10, sizeof(int)); // allocating memory for array of 10 int
-    printf("%p\n", p);
+    int *q = (int*)realloc(p, 2*sizeof(int)); // allocating memory for array of 10 int
+    printf("%p\n", q);
+
+     // free - free(ptr)
+    // NB: memory dynamically allocated remains allocated throughout the lifetime of the program(application), unless explicitly de-allocated from the memory
+    free(p);
+    p = NULL; // after free, adjust pointer to NULL
 
     return (0);
 }
