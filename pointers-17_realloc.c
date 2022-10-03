@@ -19,7 +19,7 @@ int main()
         A[i] = i+1;
     }
 
-    int *B = (int*)realloc(A, 0)); // equivalent to free(A)
+    int *B = (int*)realloc(A, 0); // equivalent to free(A)
 
     int *B = (int*)realloc(A, 2*n*sizeof(int)); // reallocation of memory
 
