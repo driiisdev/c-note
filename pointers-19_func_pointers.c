@@ -9,21 +9,30 @@
  * 
  * NB: int *p(int, int); // declaring a function that would return int*. in other words declaring Add() func will go thus; int *Add(int a, int b){return pointer}
  */
-
+void sayHello(char *name)
+{
+    printf("Hello %s\n", name);
+}
 int Add(int a, int b)
 {
     return (a+b);
 }
+
 int main ()
 {
     int c;
     int (*p)(int, int); // declaring a function pointer
 
     p = &Add; // using either '&Add' or 'Add' will assign the address of the func(Add) to the pointer, only that using 'Add' means :- c = p(2, 3);
-    
+
     c = (*p)(2, 3); // de-referencing and executing the function 
 
     printf("%d\n", c);
+
+    void (*s)(char *);
+
+    s = sayHello;
+    s("Idris");
 
     return (0);
 }
